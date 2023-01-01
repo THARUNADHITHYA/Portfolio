@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.example.portfolio.cv.CVFragment;
 import com.example.portfolio.home.HomeFragment;
+import com.example.portfolio.team.TeamFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,11 +16,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().hide();
-        setCVfragment();
-
+        //setCVfragment();
         //setHomeFragment();
+        setTeamFragment();
     }
 
+    void setTeamFragment()
+    {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new TeamFragment()).commit();
+    }
 
     void setCVfragment()
     {
