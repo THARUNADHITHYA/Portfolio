@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
     android:background="@drawable/team_card_bg"
     >
 
@@ -25,6 +26,7 @@
         android:layout_marginTop="8dp"
         android:text="Jhon Dev"
         android:textStyle="bold"
+        android:textColor="#000"
         app:layout_constraintStart_toEndOf="@+id/team_item_img"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,6 +39,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:lineSpacingExtra="8sp"
+        android:textColor="#000"
         android:text="@string/lorem_text2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
